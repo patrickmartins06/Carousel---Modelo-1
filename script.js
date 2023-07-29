@@ -28,5 +28,11 @@ function prevSlide() {
 document.querySelector(".carousel-prev").addEventListener("click", prevSlide);
 document.querySelector(".carousel-next").addEventListener("click", nextSlide);
 
-// script.js
+$(document).ready(function() {
+  // Atualize a posição do background ao rolar a página
+  $(window).scroll(function() {
+    var scrollPosition = $(this).scrollTop();
+    $('.parallax-bg').css('background-position', 'center ' + -(scrollPosition / 3) + 'px');
+  });
+});
 

@@ -21,6 +21,11 @@ header{
 html{
  
 }
+
+body {
+  margin: 0;
+  background-color: #000;
+}
 #top-header {
  
   background-color: rgba(0, 0, 0, 0.4);
@@ -206,27 +211,63 @@ transition: 0.8s;
   padding: 0;
     width: 100vw;
     padding-top: 50px;
-    column-gap: 10px;
+  
+
+}
+
+
+section#img-parallax{
+    min-width: 100vw;
+    background-image: url(img/bg-cardapio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section#img-parallax2{
+  min-width: 100vw;
+  background-image: url(img/bg-cardapio2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 
 
 }
 
 
-
-
 .cardapio{
     display: flex;
     flex-direction: row;
- 
+    justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
     gap: 30px;
+    max-width: 85vw;
 }
 
 .container h2{
     text-transform: uppercase;
     text-align: center;
     padding: 10px;
+    
+}
+
+#sign {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+    background-image: url(img/placa-de-madeira.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    text-align: center;
+   height: 35vh;
+   margin-bottom: 20px;
+    background-position: top;
+margin-top: -10vh;
+
+    min-height: 10vh;
 }
 
 .cardapio img{
@@ -243,7 +284,7 @@ transition: 0.8s;
 /* Estilos para o carousel */
 .carousel-container {
     position: relative;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -254,6 +295,7 @@ transition: 0.8s;
   }
   
   .carousel-slide {
+   
     flex-shrink: 0;
     width: 100%;
     margin-right: 10px;
@@ -308,6 +350,9 @@ transition: 0.8s;
   }
   
   .info-cardapio-reverse h3{
+    margin: 0;
+    text-align: center;
+   
     font-size: 1.5rem;
     text-align: center;
     padding: 5px;
@@ -315,6 +360,18 @@ transition: 0.8s;
     font-family: 'Quicksand', sans-serif;
 
   }
+ .title-cardapio{
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+ }
+ #diferenciais p{
+  color: #000;
+ }
 
   .info-cardapio-reverse h4{
     font-size: 1.3rem;
@@ -332,16 +389,36 @@ transition: 0.8s;
 
   }
 
-  .container hr{
-  
-    border: 2px solid;
-    border-color: #C29A6D;
-  }
 
 
 
-main h3{
+#diferenciais{
+  background-color: #fff;
+}
 
+#diferenciais{
+  max-width: 60vw;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.block-dif-1, .block-dif-2{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.block-dif-1 h4, .block-dif-2 h4{
+color: #000;
+text-transform: uppercase;
+}
+
+
+section h3{
+    margin: 0;
     font-size: 1.5rem;
     text-align: center;
     padding: 5px;
@@ -415,7 +492,7 @@ main h3{
 .parallax-section {
   height: 500px; /* Altura desejada para o efeito Parallax */
   position: relative;
-  overflow: hidden;
+
 }
 
 .parallax-bg {
