@@ -1,0 +1,432 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/typo-slab-serif');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+  
+}
+header{
+    /*background-image:url(img/bg.jpg);*/
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+html{
+ 
+}
+#top-header {
+ 
+  background-color: rgba(0, 0, 0, 0.4);
+    
+
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    gap: 10vw;
+    align-items: center; /* Adjusted to align vertically centered */
+    border-bottom: 2px solid;
+    padding: 10px;
+    border-color: #C29A6D;
+    ;
+    margin: auto;
+}
+#top-header {
+color: #fff;
+}
+
+#top-header{
+    font-size: 1.4rem;
+}
+
+#logo {
+    font-family: 'TypoSlabserif-Light', sans-serif;
+                                                
+    font-weight: 600;
+ 
+
+                                                
+}
+
+#bot-header {
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: center;
+    align-items: center; /* Adjusted to align vertically centered */
+    gap: 60px;
+    background: #C29A6D;
+   
+   
+    margin: auto;
+}
+
+#bot-header a {
+    font-size: 0.8rem;
+    padding: 5px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase; /* Adjusted to the appropriate font-weight value */
+}
+
+#bot-header a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+header img {
+
+    max-width: 80px;
+  
+   
+}
+
+
+#bot-header a:hover {
+transform: scale(1.1);
+transition: 0.8s;
+}
+
+/* SLIDER */
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider {
+    display: block;
+    height: 40VH;
+    width: 90vw;
+
+
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+  
+    height: 100%;
+    width: 100vw;
+
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+
+
+/* Slider */
+
+.carousel-control-next-icon{
+    background-image: url(img/next.svg) !important;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 100%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(img/prev.svg) !important;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 100%;
+    padding: 10px !important;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 0rem !important;
+    padding-bottom: 10rem !important;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-caption h5{
+    font-size: 1.8rem !important;
+    font-weight: 700;
+}
+
+.carousel-caption p{
+    font-size: 1.2rem !important;
+    font-weight: 400;
+}
+
+.carousel-inner img::before {
+    background: rgba(0,0,0, 0.4) !important;
+
+    
+}
+.container{
+  margin: 0;
+  padding: 0;
+    width: 100vw;
+    padding-top: 50px;
+    column-gap: 10px;
+
+
+}
+
+
+
+
+.cardapio{
+    display: flex;
+    flex-direction: row;
+ 
+    align-items: center;
+    margin: auto;
+    gap: 30px;
+}
+
+.container h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+.cardapio img{
+    width: 80vw;
+}
+
+.carousel-cardapio{
+    max-width: 80vw;
+}
+
+
+/* Teste carousel cardapio*/
+
+/* Estilos para o carousel */
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-slides {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-slide {
+    flex-shrink: 0;
+    width: 100%;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .carousel-slide.active {
+    display: block;
+  }
+  
+  .carousel-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+  }
+  
+  .carousel-title h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  /* Estilos para as setas de navegação */
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-prev {
+    left: 0;
+  }
+  
+  .carousel-next {
+    right: 0;
+  }
+  
+  .info-cardapio-reverse h3{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  .info-cardapio-reverse h4{
+    font-size: 1.3rem;
+    text-align: end;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  .info-cardapio-reverse p{
+    font-size: 0.8rem;
+    text-align: end;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .container hr{
+  
+    border: 2px solid;
+    border-color: #C29A6D;
+  }
+
+
+
+main h3{
+
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  .info-cardapio h4{
+    font-size: 1.3rem;
+    text-align: initial;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+
+  }
+
+  .info-cardapio p{
+    font-size: 0.8rem;
+
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .cardapio{
+    padding: 20px;
+
+
+  }
+
+/* Melhorar contraste e tamanho do título do carrossel */
+.carousel-title h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adicione sombra ao texto para melhorar a visibilidade */
+}
+
+/* Melhorar estilo dos botões de navegação do carrossel */
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    
+    transform: translateY(-50%);
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Adicionar transições suaves ao carrossel */
+.carousel-slides {
+    transition: transform 0.3s ease;
+}
+
+
+
+.parallax-section {
+  height: 500px; /* Altura desejada para o efeito Parallax */
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('img/bg-cardapio.jpg') !important; /* Caminho da imagem de fundo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
