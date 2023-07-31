@@ -15,6 +15,15 @@
 
   
 }
+.container{
+ min-width: 100% !important;
+
+ padding-left: 50px !important;
+ padding-right: 50px !important;
+}
+
+/*header*/
+
 header{
     /*background-image:url(img/bg.jpg);*/
     background-color: #000;
@@ -23,16 +32,6 @@ header{
    
 }
 
-html{
-
-
-}
-
-body {
-  margin: 0;
- 
-  background-color: #000;
-}
 #top-header {
  
   background-color: rgba(0, 0, 0, 0.4);
@@ -108,172 +107,177 @@ transform: scale(1.1);
 transition: 0.8s;
 }
 
-/* SLIDER */
+/* Fim do Header*/
+.carroussel{
 
-.slider label {
-    background-color: #000;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
+ overflow: hidden;
+
 }
 
-.slider li:nth-child(1) label {
-    left: 10px;
+.container-100w img{
+  width: 200%;
+  overflow: hidden;
+
 }
 
-.slider li:nth-child(2) label {
-    left: 40px;
+.container-100w{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
 }
 
-.slider li:nth-child(3) label {
-    left: 70px;
+img{
+  object-fit: cover;
 }
 
-.slider input {
-    display: none;
-}
-
-.slider {
-    display: block;
-    height: 40VH;
-    width: 90vw;
-
-
-    position: relative;
-}
-
-.slider li {
-    list-style: none;
-    position: absolute;
-}
-
-.slider img {
+/*Carousel*/
+.container-bg-carousel{
+  position: relative;
   
-    height: 100%;
-    width: 100vw;
-
+}
+.slide-1{
+  background: url(img/fachada-real.jpg);
+}
+.slide-2{
+  background: url(img/interior.jpg);
 }
 
-.slider img {
-    opacity: 0;
-    visibility: hidden;
+.slide-3{
+  background: url(img/interior-buffet.jpg);
+}
+.slide-4{
+  background: url(img/interior.jpg);
+}
+.slide-5{
+  background: url(img/interior.jpg);
+}
+.slide-6{
+  background: url(img/interior.jpg);
+}
+.slide-7{
+  background: url(img/interior.jpg);
+}
+.slide-8{
+  background: url(img/interior.jpg);
+}
+.slide-9{
+  background: url(img/interior.jpg);
+}
+.slide-10{
+  background: url(img/interior.jpg);
 }
 
-.slider li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
+.slide{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  overflow-x: hidden;
 }
 
-
-
-/* Slider */
-
-.carousel-control-next-icon{
-    background-image: url(img/next.svg) !important;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 100%;
+.arrow img{
+  width:50px ;
+  padding: 10px;
+ 
 }
 
-.carousel-control-prev-icon {
-    background-image: url(img/prev.svg) !important;
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 100%;
-    padding: 10px !important;
+.arrow:hover{
+  background: rgba(0, 0, 0, 0.5);
 }
 
-
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 1.25rem;
-    left: 15%;
-    padding-top: 0rem !important;
-    padding-bottom: 10rem !important;
-    color: #fff;
-    text-align: center;
+.prev{
+  left: 0;
+}
+.next{
+  right: 0;
 }
 
-.carousel-caption h5{
-    font-size: 1.8rem !important;
-    font-weight: 700;
-}
-
-.carousel-caption p{
-    font-size: 1.2rem !important;
-    font-weight: 400;
-}
-
-.carousel-inner img::before {
-    background: rgba(0,0,0, 0.4) !important;
-
-    
-}
-.container{
-  margin: 0;
-  padding: 20px;
-    width: 100vw;
-    padding-top: 50px;
-  
-
-}
+   /* carousel cardapio */
 
 
+/*Fim do carousel*/
 
-
+/*Parallax BG*/
 section#img-parallax{
-    min-width: 100vw;
+    min-width: 98.7vw;
     background-image: url(img/bg-cardapio.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-
+    overflow-x: hidden;
 }
 
 
 section#img-parallax1{
-  min-width: 100vw;
+  min-width: 98.7vw;
   background-image: url(img/bg-price.png);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
+  overflow-x: hidden;
 }
 
 
 
 section#img-parallax2{
-  min-width: 100vw;
+  min-width: 98.7vw;
   background-image: url(img/bg-cardapio2.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
+
+
+}
+
+section#img-parallax3{
+  min-width: 98.7vw;
+  background-image: url(img/bg-content.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
 
 
 }
 
 
-.cardapio{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    gap: 30px;
-    max-width: 85vw;
+section#img-parallax4{
+  min-width: 98.7vw;
+  background-image: url(img/bg-cardapio3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+
+
+}
+section#img-parallax5{
+  min-width: 98.7vw;
+  background-image: url(img/bg-cardapio4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+
+
 }
 
-.container h2{
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px;
-    
-}
+section#img-parallax6{
+  min-width: 98.7vw;
+  background-image: url(img/bg-cardapio5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
 
+
+}
+/*FIM do Parallax BG*/
+
+/*Placas dos titulos*/
 .sign {
     display: flex;
     flex-direction: column;
@@ -282,7 +286,8 @@ section#img-parallax2{
     justify-content: center;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: -8vh;
+  
+    overflow-x: hidden;
   
 }
 .sign img{
@@ -291,121 +296,105 @@ section#img-parallax2{
   margin: auto;
   display: block;
 }
+.arrow{
+  position: absolute;
 
-.cardapio img{
-    width: 80vw;
+  top: 50%;
+  transform: translateY(-50%) ;
+  cursor: pointer;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transform: background 500ms;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
-.carousel-cardapio{
-    max-width: 80vw;
-}
+/*Fim das placas dos titulos*/
 
-
-/* Teste carousel cardapio*/
-
-/* Estilos para o carousel */
-.carousel-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+/*Bloco Preços*/
+.price-box{
+    width: 50%;
   }
   
-  .carousel-slides {
+  .price-box h3{
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 3vh;
+    
+  }
+  
+  .price-box hr{
+    border: 1px solid #7a7a7a;
+    margin: 5px;
+    
+  }
+  
+  
+  .price{
+    
     display: flex;
-    transition: transform 0.3s ease;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    
   }
   
-  .carousel-slide {
-   
-    flex-shrink: 0;
-    width: 100%;
-    margin-right: 10px;
-    position: relative;
-  }
-  
-  .carousel-slide.active {
-    display: block;
-  }
-  
-  .carousel-title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-  }
-  
-  .carousel-title h2 {
+  .price h6{
     color: #fff;
-    font-size: 1.2rem;
-    text-align: center;
-    margin: 0;
+    font-size: 1rem;
   }
   
-  .carousel-slide img {
-    width: 100%;
-    height: auto;
-
+  .price p{
+    color: #fff;
+    font-size: 1.8rem;
   }
   
-  /* Estilos para as setas de navegação */
-  .carousel-prev,
-  .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .carousel-prev {
-    left: 0;
-  }
-  
-  .carousel-next {
-    right: 0;
-  }
-  
-  .info-cardapio-reverse h3{
-    margin: 0;
-
-   
-    font-size: 1.5rem;
-
-    padding: 5px;
-    text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif;
-
-  }
- .title-cardapio{
-  width: 100vw;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
- }
- #diferenciais p{
-  color: #000;
- }
-
-  .info-cardapio-reverse h4{
-    font-size: 1.3rem;
-    text-align: end;
-    text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif;
-
-  }
-
-  .info-cardapio-reverse p{
+  .price a{
+    color: #ffffff93;
     font-size: 0.8rem;
+  }
+  
+   .price-info{
+    display: flex;
+    flex-direction:column ;
+    max-width: 50%;
+   
+    
+   }
+  
+  
+  
+   .price-box p {
+    color: #ffffffe1;
+    font-size: 0.8rem;
+  
     text-align: end;
+   }
+  
+  
+   .price-box-container {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px 30px 20px;
+    box-sizing: border-box;
+    gap: 50px;
+    vertical-align: top;
+    
+
+  }
+
+  /* Fim do bloco preços*/
+
+  /* Bloco de Promoções */
+
+  .promotion-box{
+    width: 100%;
     margin: 0;
     padding: 0;
 
@@ -414,182 +403,286 @@ section#img-parallax2{
 
 
 
-#diferenciais{
-  background-color: #fff;
-}
-
-#diferenciais{
-  max-width: 60vw;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-.block-dif-1, .block-dif-2{
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-
-.block-dif-1 h4, .block-dif-2 h4{
-color: #000;
-text-transform: uppercase;
-}
-
-
-.info-cardapio h4{
-  font-size: 1.3rem;
-  text-align: start;
-  text-transform: uppercase;
-  font-family: 'Quicksand', sans-serif;
-
-}
-
-.info-cardapio p{
-  font-size: 0.8rem;
-  text-align: start;
-  margin: 0;
-  padding: 0;
-
-}
-
-
-  .cardapio{
-    padding: 20px;
-
-
+  .promotion-box h2{
+    color: #000;
+    font-weight: 600;
   }
+    /*FIM do Bloco de Promoções */
 
-/* Melhorar contraste e tamanho do título do carrossel */
-.carousel-title h2 {
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adicione sombra ao texto para melhorar a visibilidade */
-}
+    /*Bloco de cardápio*/
+    .cardapio{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+        gap: 30px;
+        min-width: 100%;
+    }
+    
+    .container h2{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    
+    
+    
+    .cardapio img{
+        width: 80vw;
+    }
+    
+    .carousel-cardapio{
+        max-width: 80vw;
+    }
+    
+    
+    /* Teste carousel cardapio*/
+    
+    
+      
+      .info-cardapio-reverse h3{
+        margin: 0;
+    
+       
+        font-size: 1.5rem;
+    
+        padding: 5px;
+        text-transform: uppercase;
+        font-family: 'Quicksand', sans-serif;
+    
+      }
+     .title-cardapio{
+      width: 100vw;
+      margin: 0 auto;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+     }
+     #diferenciais p{
+      color: #000;
+     }
+    
+      .info-cardapio-reverse h4{
+        font-size: 1.3rem;
+        text-align: end;
+        text-transform: uppercase;
+        font-family: 'Quicksand', sans-serif;
+    
+      }
+    
+      .info-cardapio-reverse p{
+        font-size: 0.8rem;
+        text-align: end;
+        margin: 0;
+        padding: 0;
+    
+      }
+    
+    
+    
+    
+    #diferenciais{
+      background-color: #fff;
+    }
+    
+    #diferenciais{
+      max-width: 60vw;
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    .block-dif-1, .block-dif-2{
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+    
+    .block-dif-1 h4, .block-dif-2 h4{
+    color: #000;
+    text-transform: uppercase;
+    }
+    
+    
+    .info-cardapio h4{
+      font-size: 1.3rem;
+      text-align: start;
+      text-transform: uppercase;
+      font-family: 'Quicksand', sans-serif;
+    
+    }
+    
+    .info-cardapio p{
+      font-size: 0.8rem;
+      text-align: start;
+      margin: 0;
+      padding: 0;
+    
+    }
+    
+    
+      .cardapio{
+        padding: 20px;
+    
+    
+      }
+    
+    .carousel-title h2 {
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adicione sombra ao texto para melhorar a visibilidade */
+    }
 
+    .cardapio{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 30px;
+        max-width: 85vw;
+    }
+    
+    .container h2{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    
+    
+    
+    .cardapio img{
+        width: 30vw;
+    }
+    
+    .carousel-cardapio{
+        width: 50vw;
+    }
+    
 
+    /* Fim do bloco de Cardápio */
 
-.parallax-section {
-  height: 500px; /* Altura desejada para o efeito Parallax */
-  position: relative;
+    /*Bloco avaliações*/
 
-}
+    .avaliacoes img{ 
+      width: 90vw;
 
-.parallax-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('img/bg-cardapio.jpg') !important; /* Caminho da imagem de fundo */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    }
 
-}
-
-
-/* Bloco de preços */
-
-
-.price-box{
-  width: 50%;
-}
-
-.price-box h3{
-color: #fff;
-font-weight: 600;
-text-transform: uppercase;
-font-size: 1.2rem;
-margin-bottom: 3vh;
-  
-}
-
-.price-box hr{
-  border: 1px solid #7a7a7a;
-  margin: 5px;
-  
-}
-
-
-.price{
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  
-}
-
-.price h6{
-  color: #fff;
-  font-size: 1rem;
-}
-
-.price p{
-  color: #fff;
-  font-size: 0.8rem;
-}
-
-.price a{
-  color: #ffffff93;
-  font-size: 0.6rem;
-}
-
- .price-info{
-  display: flex;
-  flex-direction:column ;
-  max-width: 50%;
+    .avaliacoes a{
+      background-color: #C29A6D;
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    margin:20px;
  
-  
- }
+    }
+    .avaliacoes a:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+ 
+    }
+
+    .avaliacoes{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    /* Bloco de conteudo*/
+
+    .content{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .content h2{
+      font-size: 1.5rem;
+    
+        padding: 5px;
+        text-transform: uppercase;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .box-content-1 p {
+      font-size: 0.9rem;
+      text-align: justify;
+      padding: 20px;
+    }
+
+    /*BLOCO ABOUT*/
+
+    .about{
+      display: flex;
+      flex-direction: row;
+      align-items:flex-start;
+      padding: 30px;
+      
+      gap: 20px;
+      
+
+    }
+    .about p{
+      color: #000;
+      font-family: 'Quicksand', sans-serif;
+    }
+    .about h3{
+      color: #000;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      text-align: center;
+    }
+    .about img{
+      max-width: 300px ;
+    }
+    .about img:hover{
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+
+
+    /*FIM BLOCO ABOUT*/
 
 
 
- .price-box p {
-  color: #ffffffe1;
-  font-size: 0.8rem;
+    /*FOOTER*/
+    footer{
+      background-color: #000;
+      margin: 0;
+      padding: 0;
 
-  text-align: end;
- }
+    width: 100%;
+    }
 
+    footer img {
 
- .price-box-container {
-  display: inline-flex;
-  flex-direction: row;
-  width: 100vw;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 10px 20px 30px 20px;
-  box-sizing: border-box;
-  gap: 50px;
-  vertical-align: top;
-  
-/* Adjust the gap as needed */
-}
-
-
-
-
-
-/* Ajustar tamanho da fonte em telas menores */
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
+      max-width: 80px;
+    
+     
   }
-
-  /* Adicione outras alterações de estilo conforme necessário para telas menores */
-}
-
-/* Outros estilos do seu site... */
-
-
-
-.propotion-box h2{
-  color: #000;
-  font-weight: 600;
-}
+  .top-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }

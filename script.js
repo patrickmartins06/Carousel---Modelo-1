@@ -1,35 +1,51 @@
-// Seu código JavaScript anterior
+let slide = document.querySelectorAll('.slide');
+var current = 0;
 
-// Selecionar os elementos corretos para os carrosséis
-const slidesContainers = document.querySelectorAll(".carousel-slides");
-const slides = document.querySelectorAll(".carousel-slide");
-const slideWidth = slides[0].clientWidth + 10;
-
-// Funções de controle dos carrosséis
-function showSlide(slideContainer, index) {
-    if (index < 0) {
-        index = slides.length - 1;
-    } else if (index >= slides.length) {
-        index = 0;
+function cls(){
+    for(let i = 0; i < slide.length; i++){
+        slide[i].style.display = 'none';
     }
-
-    slideContainer.style.transform = `translateX(-${slideWidth * index}px)`;
 }
 
-function nextSlide(event) {
-    const slideContainer = event.target.previousElementSibling;
-    const currentIndex = Array.from(slidesContainers).indexOf(slideContainer);
-    showSlide(slideContainer, currentIndex + 1);
+function next(){
+    cls();
+    if(current === slide.length-1) current = -1;
+    current++
+    slide[current].style.display = 'block';
+    
+    var x = 0.8;
+    var intX = setInterval(function(){
+        x+=0.1;
+        
+        if(x >= 1){
+            clearInterval(intX)
+            x = 0.8;
+        }
+    }, 100);
+
 }
 
-function prevSlide(event) {
-    const slideContainer = event.target.previousElementSibling.previousElementSibling;
-    const currentIndex = Array.from(slidesContainers).indexOf(slideContainer);
-    showSlide(slideContainer, currentIndex - 1);
+
+function prev(){
+    cls();
+    if(current === 0) current = slide.length;
+    current--;
+    slide[current].style.display = 'block';
+    slide[current].style.opacity = 0.8;
+    var x = 0.8;
+    var intX = setInterval(function(){
+        x+=0.1;
+        slide[current].style.opacity = x;
+        if(x >= 1){
+            clearInterval(intX)
+            x = 0.8;
+        }
+    }, 100);
+
 }
 
-// Adicionar eventos de clique aos botões de navegação dos carrosséis
-document.querySelectorAll(".carousel-prev").forEach(button => button.addEventListener("click", prevSlide));
-document.querySelectorAll(".carousel-next").forEach(button => button.addEventListener("click", nextSlide));
-
-// Seu código JavaScript anterior
+function start(){
+    cls();
+    slide[current].style.display = 'block';
+}
+start();

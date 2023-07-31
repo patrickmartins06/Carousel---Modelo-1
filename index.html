@@ -6,7 +6,8 @@
     <title>Modelo - Template</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <header>
     <div id="top-header">
@@ -15,7 +16,7 @@
     </a>
 
     <a href="#sobre" class="nav-link"><i class="fa-solid fa-phone"></i>  (41) 98046-3279</a>
-    <a href="#home" class="nav-link" id="adress"><i class="fa-solid fa-location-dot"></i>   Rua dos Pinheiros, 1234 - Curitiba</a>
+    <a href="#home" class="nav-link" id="adress"><i class="fa-solid fa-location-dot"></i>   Rua XV de Novembro, 15, Centro - Curitiba</a>
  
 
 
@@ -32,20 +33,50 @@
     </header>
 
 <body>
- <!-- Carousel do banner -->
- <div class="carousel-container">
-  <div class="carousel-slides">
-      <div class="carousel-slide active">
-          <img src="img/fachada-real.jpg" class="d-block w-100" alt="Slide 1">
-      </div>
-      <div class="carousel-slide">
-          <img src="img/interior.jpg" class="d-block w-100" alt="Slide 2">
-      </div>
+<!-- Carousel do banner -->
+  <div class="container-bg-carousel">
+    <div class="arrow next" onclick="next()">
+     
+      <img src="img/right-arrow.png" alt="prev">
+    </div>
+    <div class="slide slide-1">
 
-  <button class="carousel-prev" aria-label="Slide anterior">&#10094;</button>
-  <button class="carousel-next" aria-label="Próximo slide">&#10095;</button>
-</div>
-  <!-- FIM Carousel do banner -->
+    </div>
+    <div class="slide slide-2">
+
+    </div>
+    <div class="slide slide-3">
+
+    </div>
+    <div class="slide slide-4">
+
+    </div>
+    <div class="slide slide-5">
+
+    </div>
+    <div class="slide slide-6">
+
+    </div>
+    <div class="slide slide-7">
+
+    </div>
+    <div class="slide slide-8">
+
+    </div>
+    <div class="slide slide-9">
+
+    </div>
+    <div class="slide slide-10">
+
+    </div>
+
+
+
+    <div class="arrow prev" onclick="prev()">
+      <img src="img/left-arrow.png" alt="next">
+    </div>
+  </div>
+<!-- FIM Carousel do banner -->
 
 
 
@@ -59,9 +90,9 @@
     <div class="price-box">
       <h3>Almoço</h3>
       <div class="price">
-        <h6>Terça a sexta</h6>
+        <h6>Segunda a Sexta, exceto feriados</h6>
         <p>R$ 
-          129,90
+          92,00
           <a>/pessoa</a></p>
         
       </div>
@@ -69,14 +100,14 @@
       <div class="price">
         <h6>Sábado</h6>
         <p>R$ 
-          139,90
+          114,00
           <a>/pessoa</a></p>
       </div>
       <hr>
       <div class="price">
         <h6>Domingo e Feriado</h6>
         <p>R$ 
-          145,90
+          114,00
           <a>/pessoa</a></p>
       </div>
       <br>
@@ -84,24 +115,40 @@
       <div class="price">
         <h6>Terça a Sábado</h6>
         <p>R$ 
-          129,90          
+          102,00         
           <a>/pessoa</a></p>
       </div>
       <hr>
-
+      <div class="price">
+        <h6>Segunda a Sexta, exceto feriados</h6>
+        <p>R$ 
+          102,00         
+          <a>/pessoa</a></p>
+      </div>
+      <div class="price">
+        <h6>Sábado</h6>
+        <p>R$ 
+          114,00         
+          <a>/pessoa</a></p>
+      </div>
     </div>
 
   
       <div class="price-box">
         <h3 style="text-align: end;">Observações</h3>
-        
-          <p>- Valores sujeitos a alteração sem aviso prévio.</p>
-                <p>  - Para feriados ou datas comemorativas, consultar horários e valores via fone.</p>
-                    <p>  - Crianças até 5 anos não pagam / De 6 a 9 anos pagam rodízio infantil.</p>
-                      
+                  
+                <p>  - Para feriados ou datas comemorativas, consultar horários e valores via fone.</p>                   
                           <p>  - Não aceitamos cheques.</p>
             <p>  - Não aceitamos vales-refeição de papel, apenas cartões.</p>
               <p>  - Não aceitamos vales-alimentação.</p>
+
+              <br>
+              <h3 style="text-align: end;">Não cobramos taxa de serviço!</h3>
+              <p>- Valores sujeitos a alteração sem aviso prévio.</p>
+              <h3 style="text-align: end;">Descontos para Crianças no Rodízio</h3>
+              <p>- 0 a 5 anos não pagam / 6 a 10 anos pagam meio rodízio</p>
+              <h3 style="text-align: end;">Descontos para Bariátricos no Rodízio</h3>
+              <p>20% de desconto no rodízio. Obrigatória apresentação de identidade e carteirinha de operado.</p>
 
         
   
@@ -115,7 +162,7 @@
 
 <!-- Bloco Promoções-->
 <section class="container">
-  <div class="propotion-box">
+  <div class="promotion-box">
    <div class="sign">
    <img src="img/placa-promoções.png" alt="">
   </div>
@@ -153,7 +200,7 @@
 </section>
  <!-- FIM doBloco Promoções-->
      
-
+<!--cardapio-->
 
     
       <section class="container" id="img-parallax">
@@ -166,37 +213,7 @@
       <div class="cardapio">
         <div class="cardapio">
      
-              <div class="carousel-container">
-                <div class="carousel-slides">
-                    <div class="carousel-slide active">
-                      <img src="img/1.jpg" alt="Picanha">
-                      <div class="carousel-title">
-                          <h2>Picanha</h2>
-                      </div>
-                    </div>
-                    <div class="carousel-slide">
-                      <img src="img/picanha2.jpg" alt="Picanha">
-                      <div class="carousel-title">
-                          <h2>Picanha</h2>
-                      </div>
-                    
-                    <!-- Adicione mais slides conforme necessário -->
-                </div>
-                <button class="carousel-prev" aria-label="Slide anterior">&#10094;</button>
-                <button class="carousel-next" aria-label="Próximo slide">&#10095;</button>
-            </div>
-              
-          </div>
 
-
-
-          <div class="info-cardapio">
-              <!-- ... conteúdo do cardápio ... -->
-          </div>
-          <button class="carousel-prev">&#10094;</button>
-          <button class="carousel-next">&#10095;</button>
-      </div>
-      <div>
       
         <div class="info-cardapio">
         
@@ -218,9 +235,10 @@
           <p> Coração | Asinha de Faisão | Coxinha de Faisão | Peru com Bacon</p>
           <br>
       </div>
-    </div>
 
        </section> 
+
+<!--Diferenciais carne-->
       <div id="diferenciais">
         <div class="block-dif-1">
           <h4>Cortes Especiais*</h4>
@@ -232,6 +250,8 @@
         <p>Picanha Jardins (Exclusiva)</p>
        </div>
       </div>
+
+      <!-- Frutos do mar  -->
        <section class="container" id="img-parallax2">
         <div class="title-cardapio">
           <h3 style="border-bottom: 3px solid #0051ff; width: 18vw; text-align: center; ">Frutos do mar</h3>
@@ -259,48 +279,240 @@
     <section class="parallax-section">
       <div class="parallax-bg"></div>
     </section>
-      <div class="cardapio">
+     
 
         
-        <div class="carousel-container">
-            <div class="carousel-slides">
-                <div class="carousel-slide active">
-                    <img src="img/1.jpg" alt="Picanha">
-                    <div class="carousel-title">
-                        <h2>Picanha</h2>
-                    </div>
-                </div>
-                <div class="carousel-slide">
-                    <img src="img/picanha2.jpg" alt="Slide 2">
-                    <div class="carousel-title">
-                        <h2>Slide 2</h2>
-                    </div>
-                </div>
-                <!-- Adicione mais slides conforme necessário -->
-            </div>
-            <button class="carousel-prev" aria-label="Slide anterior">&#10094;</button>
-            <button class="carousel-next-2" aria-label="Próximo slide">&#10095;</button>
-        </div>
-        <div class="info-cardapio">
-            <!-- ... conteúdo do cardápio ... -->
-        </div>
-        <button class="carousel-prev">&#10094;</button>
-        <button class="carousel-next">&#10095;</button>
-    </div>
+        
 
 
   
-  <!-- Mais conteúdo ... -->
+
         </section>
+        <!--Diferenciais Frutos do mar-->
+        <div id="diferenciais">
+          <div class="block-dif-1">
+            <h4>Cortes Especiais*</h4>
+          <p> Picanha Grelhada | Red Angus | Prime Angus | <br>| Chorizo | Mignon na Mostarda e Mel</p>
+       </div>
+         
+          <div class="block-dif-2">
+          <h4>Sábados e Domingos <br>no Almoço</h4>
+          <p>Picanha Jardins (Exclusiva)</p>
+         </div>
+        </div>
+<!--Massas-->
+<section class="container" id="img-parallax4">
 
-<!-- Seu rodapé e scripts existentes ... -->
+<div class="title-cardapio">
+  <h3 style="border-bottom: 3px solid #b40000; width: 20vw; text-align: center;">Massas</h3>
+</div>
+<div class="cardapio">
+  <div class="cardapio">
 
+
+
+  <div class="info-cardapio">
+  
+    <h4>Cortes Bovinos</h4>
+    <p> Red Angus Australiano | Picanha Alho e Óleo | Filet Argentino | Picanha Nobre | Picanha | Alcatra | Costela | Filé Mignon | Maminha com Queijo | Fraldinha na Mostarda | Fraldinha no Sal | Cupim</p>
+    <br>
+  
+  
+    <h4>Cortes Suínos</h4>
+    <p> Costela de Porco | Linguicinha Toscana | Linguicinha Apimentada</p>
+    <br>
+  
+  
+    <h4>Cortes de Cordeiro</h4>
+    <p> Paleta de Cordeiro | Carré de Cordeiro</p>
+    <br>
+  
+    <h4>Cortes de Aves</h4>
+    <p> Coração | Asinha de Faisão | Coxinha de Faisão | Peru com Bacon</p>
+    <br>
+</div>
+
+ </section> 
+<!--Diferenciais massas-->
+ <div id="diferenciais">
+  <div class="block-dif-1">
+    <h4>Cortes Especiais*</h4>
+  <p> Picanha Grelhada | Red Angus | Prime Angus | <br>| Chorizo | Mignon na Mostarda e Mel</p>
+</div>
+ 
+  <div class="block-dif-2">
+  <h4>Sábados e Domingos <br>no Almoço</h4>
+  <p>Picanha Jardins (Exclusiva)</p>
+ </div>
+</div>
+<!--FIM DE Massas-->
+
+<!--Pratos quentes-->
+<section class="container" id="img-parallax6">
+
+  <div class="title-cardapio">
+    <h3 style="border-bottom: 3px solid #ddc701; width: 20vw; text-align: center;">Pratos Quentes</h3>
+  </div>
+  <div class="cardapio">
+    <div class="cardapio">
+  
+  
+  
+    <div class="info-cardapio">
+    
+      <h4>Cortes Bovinos</h4>
+      <p> Red Angus Australiano | Picanha Alho e Óleo | Filet Argentino | Picanha Nobre | Picanha | Alcatra | Costela | Filé Mignon | Maminha com Queijo | Fraldinha na Mostarda | Fraldinha no Sal | Cupim</p>
+      <br>
+    
+    
+      <h4>Cortes Suínos</h4>
+      <p> Costela de Porco | Linguicinha Toscana | Linguicinha Apimentada</p>
+      <br>
+    
+    
+      <h4>Cortes de Cordeiro</h4>
+      <p> Paleta de Cordeiro | Carré de Cordeiro</p>
+      <br>
+    
+      <h4>Cortes de Aves</h4>
+      <p> Coração | Asinha de Faisão | Coxinha de Faisão | Peru com Bacon</p>
+      <br>
+  </div>
+  
+   </section> 
+   <div id="diferenciais">
+    <div class="block-dif-1">
+      <h4>Cortes Especiais*</h4>
+    <p> Picanha Grelhada | Red Angus | Prime Angus | <br>| Chorizo | Mignon na Mostarda e Mel</p>
+  </div>
+   
+    <div class="block-dif-2">
+    <h4>Sábados e Domingos <br>no Almoço</h4>
+    <p>Picanha Jardins (Exclusiva)</p>
+   </div>
+  </div>
+ 
+<!--FIM DE Pratos quentes-->
+
+<!--Saladas-->
+<section class="container" id="img-parallax5">
+
+  <div class="title-cardapio">
+    <h3 style="border-bottom: 3px solid #00b400; width: 20vw; text-align: center;">Saladas</h3>
+  </div>
+  <div class="cardapio">
+    <div class="cardapio">
+  
+  
+  
+    <div class="info-cardapio">
+    
+      <h4>Cortes Bovinos</h4>
+      <p> Red Angus Australiano | Picanha Alho e Óleo | Filet Argentino | Picanha Nobre | Picanha | Alcatra | Costela | Filé Mignon | Maminha com Queijo | Fraldinha na Mostarda | Fraldinha no Sal | Cupim</p>
+      <br>
+    
+    
+      <h4>Cortes Suínos</h4>
+      <p> Costela de Porco | Linguicinha Toscana | Linguicinha Apimentada</p>
+      <br>
+    
+    
+      <h4>Cortes de Cordeiro</h4>
+      <p> Paleta de Cordeiro | Carré de Cordeiro</p>
+      <br>
+    
+      <h4>Cortes de Aves</h4>
+      <p> Coração | Asinha de Faisão | Coxinha de Faisão | Peru com Bacon</p>
+      <br>
+  </div>
+  
+   </section> 
+
+   
+<!-- Fim do Bloco de Cardápio ... -->
+
+
+<!-- Bloco de Avaliações ... -->
+<section class="container">
+  <div class="sign">
+    <img src="img/placa-avaliacoes.png" alt="">
+   </div>
+
+  <div class="avaliacoes">
+    <img src="img/avaliações.jpg" alt="">
+    <a href=""> AVALIAR AGORA!</a>
+  </div>
+</section>
+<!-- Fim do Bloco de Avaliações ... -->
+<!-- Fim do Bloco de Conteudo ... -->
+<section class="container" id="img-parallax3">
+
+  <div class="sign">
+    <img src="img/placa-conteudo.png" alt="">
+   </div>
+
+   <div class="content">
+    <div class="box-content-1">
+      <h2>PONTOS DA CARNE</h2>
+      <img src="img/pontos_carne.png" alt="">
+    </div>
+    <div class="box-content-1">
+      <h2>COMO SURGIU O RODÍZIO DE CARNES?</h2>
+      <p>O rodízio não é uma instituição antiga. Surgiu na região Sul do Brasil ao longo da década de 60. Começou às margens das rodovias, ao lado dos postos de combustível, para atrair seu cliente preferencial: o caminhoneiro que aparecia em frente. Passadas três décadas, já se espalhava pelas principais cidades do País e do exterior.
+      </p>
+      <p>Não se consegue precisar com exatidão a data de nascimento do primeiro rodízio. O primado estaria entre a churrascaria Matias, de Sapiranga, a 65 quilômetros de Porto Alegre, no Rio Grande do Sul; e a churrascaria Blumenauense, de Quatro Barras, a 31 quilômetros de Curitiba, no Paraná.
+      </p>
+      <p>Ambas funcionam até hoje. Adilvo Conte, um dos atuais sócios da Matias, garante que o sistema foi inventado ali pelo então proprietário do estabelecimento, o churrasqueiro gaúcho Edwino Guilherme Mates, conhecido por seu Matias (daí o nome da casa). "Isso aconteceu entre 1962 e 63", especula.</p>
+    </div>
+   </div>
+
+</section>
+<!--Sobre nos-->
+<section class="container about">
+<div class="about-box1">
+  <img src="img/banner-4.jpg" alt="">
+</div>
+<div class="about-box2">
+  <h3>Sobre Nós</h3>
+  <p>Ambas funcionam até hoje. Adilvo Conte, um dos atuais sócios da Matias, garante que o sistema foi inventado ali pelo então proprietário do estabelecimento, o churrasqueiro gaúcho Edwino Guilherme Mates, conhecido por seu Matias (daí o nome da casa). "Isso aconteceu entre 1962 e 63", especula.</p>
+</div>
+<div class="about-box3">
+  <img src="img/banner-5.jpg" alt="">
+</div>
+</section>
+
+
+
+<!--MAPA-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.1941697331254!2d-49.27574948255616!3d-25.431771199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce46d51705d83%3A0x601690d6542517ad!2sR.%20XV%20de%20Novembro%2C%2015%20-%20Centro%2C%20Curitiba%20-%20PR%2C%2080020-310!5e0!3m2!1spt-BR!2sbr!4v1690833813138!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<!-- Fim do Bloco de Conteudo ... -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/568cb59673.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+<a id="robbu-whatsapp-button" target="_blank" href="https://api.whatsapp.com/send?phone=5541999999999">
+  <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+</a>
 </body>
+<footer>
+
+ <section class="top-footer"> <div class="box-1">
+    <img src="img/logo.png" > CHURRASCARIA.COM
+  </a>
+  </div>
+  <div class="box-2">
+    <a href="#sobre" class="nav-link"><i class="fa-solid fa-phone"></i>  (41) 98046-3279</a>
+  </div>
+  <div class="box-3">
+   <a href=""><i class="fa-brands fa-facebook"></i></a> 
+   <a href=""><i class="fa-brands fa-instagram"></i></a> 
+  </div>
+</section>
+</footer>
 </html>
 
