@@ -1,38 +1,35 @@
-let slideIndex = 0;
-const slidesContainer = document.querySelector(".carousel-slides");
-const slides = document.getElementsByClassName("carousel-slide");
+// Seu código JavaScript anterior
+
+// Selecionar os elementos corretos para os carrosséis
+const slidesContainers = document.querySelectorAll(".carousel-slides");
+const slides = document.querySelectorAll(".carousel-slide");
 const slideWidth = slides[0].clientWidth + 10;
 
-showSlide(slideIndex);
+// Funções de controle dos carrosséis
+function showSlide(slideContainer, index) {
+    if (index < 0) {
+        index = slides.length - 1;
+    } else if (index >= slides.length) {
+        index = 0;
+    }
 
-function showSlide(index) {
-  if (index < 0) {
-    index = slides.length - 1;
-  } else if (index >= slides.length) {
-    index = 0;
-  }
-
-  slidesContainer.style.transform = `translateX(-${slideWidth * index}px)`;
-
-  slideIndex = index;
+    slideContainer.style.transform = `translateX(-${slideWidth * index}px)`;
 }
 
-function nextSlide() {
-  showSlide(slideIndex + 1);
+function nextSlide(event) {
+    const slideContainer = event.target.previousElementSibling;
+    const currentIndex = Array.from(slidesContainers).indexOf(slideContainer);
+    showSlide(slideContainer, currentIndex + 1);
 }
 
-function prevSlide() {
-  showSlide(slideIndex - 1);
+function prevSlide(event) {
+    const slideContainer = event.target.previousElementSibling.previousElementSibling;
+    const currentIndex = Array.from(slidesContainers).indexOf(slideContainer);
+    showSlide(slideContainer, currentIndex - 1);
 }
 
-document.querySelector(".carousel-prev").addEventListener("click", prevSlide);
-document.querySelector(".carousel-next").addEventListener("click", nextSlide);
+// Adicionar eventos de clique aos botões de navegação dos carrosséis
+document.querySelectorAll(".carousel-prev").forEach(button => button.addEventListener("click", prevSlide));
+document.querySelectorAll(".carousel-next").forEach(button => button.addEventListener("click", nextSlide));
 
-$(document).ready(function() {
-  // Atualize a posição do background ao rolar a página
-  $(window).scroll(function() {
-    var scrollPosition = $(this).scrollTop();
-    $('.parallax-bg').css('background-position', 'center ' + -(scrollPosition / 3) + 'px');
-  });
-});
-
+// Seu código JavaScript anterior

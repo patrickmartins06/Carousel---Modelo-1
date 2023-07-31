@@ -33,71 +33,59 @@
 
 <body>
 
-  
-    <div id="carouselExampleCaptions" class="carousel slide">
-   
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/fachada-real.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-             
-              
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/interior.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-           
-              
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="img/agenciaempregadadomestica_Make_a_realistic_image_of_a_Brazilian_66abb842-28d8-44a7-9826-fc33334d9d0b.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            
-              
-            </div>
-          </div>
-     
-        </div>
-        <button id="arrow" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button id="arrow" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <!-- Carousel do banner -->
+<div class="carousel-container">
+  <div class="carousel-slides">
+      <div class="carousel-slide active">
+          <img src="img/fachada-real.jpg" class="d-block w-100" alt="Slide 1">
       </div>
+      <div class="carousel-slide">
+          <img src="img/interior.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
+
+  <button class="carousel-prev" aria-label="Slide anterior">&#10094;</button>
+  <button class="carousel-next" aria-label="Próximo slide">&#10095;</button>
+</div>
+  <!-- FIM Carousel do banner -->
+
+     
+
+
+    
       <section class="container" id="img-parallax">
         <div id="sign">
        
       </div>
       <div class="title-cardapio">
-        <h3 style="border-bottom: 3px solid #b40000; width: 20vw; ">Rodízio de carnes</h3>
+        <h3 style="border-bottom: 3px solid #b40000; width: 20vw; text-align: center;">Rodízio de carnes</h3>
       </div>
       <div class="cardapio">
         <div class="cardapio">
-          <div class="carousel-container">
-              <div class="carousel-slides">
-                  <div class="carousel-slide active">
+     
+              <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide active">
                       <img src="img/1.jpg" alt="Picanha">
                       <div class="carousel-title">
                           <h2>Picanha</h2>
                       </div>
-                  </div>
-                  <div class="carousel-slide">
-                      <img src="img/picanha2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="carousel-slide">
+                      <img src="img/picanha2.jpg" alt="Picanha">
                       <div class="carousel-title">
-                          <h2>Slide 2</h2>
+                          <h2>Picanha</h2>
                       </div>
-                  </div>
-                  <!-- Adicione mais slides conforme necessário -->
-              </div>
-              <button class="carousel-prev" aria-label="Slide anterior">&#10094;</button>
-              <button class="carousel-next" aria-label="Próximo slide">&#10095;</button>
+                    
+                    <!-- Adicione mais slides conforme necessário -->
+                </div>
+                <button class="carousel-prev" aria-label="Slide anterior">&#10094;</button>
+                <button class="carousel-next" aria-label="Próximo slide">&#10095;</button>
+            </div>
+              
           </div>
+
+
+
           <div class="info-cardapio">
               <!-- ... conteúdo do cardápio ... -->
           </div>
@@ -108,14 +96,23 @@
       
         <div class="info-cardapio">
         
-        <h4>Cortes Bovinos</h4>
-        <p> Red Angus Australiano | Picanha Alho e Óleo | Filet Argentino | Picanha Nobre | Picanha | Alcatra | Costela | Filé Mignon | Maminha com Queijo | Fraldinha na Mostarda | Fraldinha no Sal | Cupim</p>
-        <h4>Cortes Suínos</h4>
-        <p> Costela de Porco | Linguicinha Toscana | Linguicinha Apimentada</p>
-        <h4>Cortes de Cordeiro</h4>
-        <p> Paleta de Cordeiro | Carré de Cordeiro</p>
-        <h4>Cortes de Aves</h4>
-        <p> Coração | Asinha de Faisão | Coxinha de Faisão | Peru com Bacon</p>
+          <h4>Cortes Bovinos</h4>
+          <p> Red Angus Australiano | Picanha Alho e Óleo | Filet Argentino | Picanha Nobre | Picanha | Alcatra | Costela | Filé Mignon | Maminha com Queijo | Fraldinha na Mostarda | Fraldinha no Sal | Cupim</p>
+          <br>
+        
+        
+          <h4>Cortes Suínos</h4>
+          <p> Costela de Porco | Linguicinha Toscana | Linguicinha Apimentada</p>
+          <br>
+        
+        
+          <h4>Cortes de Cordeiro</h4>
+          <p> Paleta de Cordeiro | Carré de Cordeiro</p>
+          <br>
+        
+          <h4>Cortes de Aves</h4>
+          <p> Coração | Asinha de Faisão | Coxinha de Faisão | Peru com Bacon</p>
+          <br>
       </div>
     </div>
 
@@ -133,7 +130,7 @@
       </div>
        <section class="container" id="img-parallax2">
         <div class="title-cardapio">
-          <h3 style="border-bottom: 3px solid #0051ff; width: 18vw; ">Frutos do mar</h3>
+          <h3 style="border-bottom: 3px solid #0051ff; width: 18vw; text-align: center; ">Frutos do mar</h3>
         </div>
     <div class="cardapio">
       <div>
@@ -178,7 +175,7 @@
                 <!-- Adicione mais slides conforme necessário -->
             </div>
             <button class="carousel-prev" aria-label="Slide anterior">&#10094;</button>
-            <button class="carousel-next" aria-label="Próximo slide">&#10095;</button>
+            <button class="carousel-next-2" aria-label="Próximo slide">&#10095;</button>
         </div>
         <div class="info-cardapio">
             <!-- ... conteúdo do cardápio ... -->

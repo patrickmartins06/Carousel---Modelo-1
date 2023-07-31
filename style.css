@@ -8,6 +8,8 @@
 * {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
+
+
   
 }
 header{
@@ -19,11 +21,13 @@ header{
 }
 
 html{
- 
+  overflow-x: hidden;
+
 }
 
 body {
   margin: 0;
+ 
   background-color: #000;
 }
 #top-header {
@@ -351,10 +355,10 @@ margin-top: -10vh;
   
   .info-cardapio-reverse h3{
     margin: 0;
-    text-align: center;
+
    
     font-size: 1.5rem;
-    text-align: center;
+
     padding: 5px;
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
@@ -417,31 +421,22 @@ text-transform: uppercase;
 }
 
 
-section h3{
-    margin: 0;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 5px;
-    text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif;
+.info-cardapio h4{
+  font-size: 1.3rem;
+  text-align: start;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
 
-  }
+}
 
-  .info-cardapio h4{
-    font-size: 1.3rem;
-    text-align: initial;
-    text-transform: uppercase;
-    font-family: 'Quicksand', sans-serif;
+.info-cardapio p{
+  font-size: 0.8rem;
+  text-align: start;
+  margin: 0;
+  padding: 0;
 
-  }
+}
 
-  .info-cardapio p{
-    font-size: 0.8rem;
-
-    margin: 0;
-    padding: 0;
-
-  }
 
   .cardapio{
     padding: 20px;
@@ -456,35 +451,6 @@ section h3{
     text-align: center;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adicione sombra ao texto para melhorar a visibilidade */
-}
-
-/* Melhorar estilo dos botões de navegação do carrossel */
-.carousel-prev,
-.carousel-next {
-    position: absolute;
-    
-    transform: translateY(-50%);
-    font-size: 15px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-    padding: 10px 15px;
-    color: #fff;
-}
-
-.carousel-prev {
-    left: 10px;
-}
-
-.carousel-next {
-    right: 10px;
-}
-
-/* Adicionar transições suaves ao carrossel */
-.carousel-slides {
-    transition: transform 0.3s ease;
 }
 
 
